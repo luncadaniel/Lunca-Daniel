@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Taxi - Tarife</title>
+
+  <link rel="stylesheet" href="/css/app.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER IDENTIC CA INDEX -->
+<header class="header">
+  <div class="container">
+
+    <div class="logo">⚡ SPEED <span>TAXI</span></div>
+
+    <nav class="menu">
+      <a href="index.html">Acasă</a>
+      <a href="services.html">Servicii</a>
+      <a href="fleet.html">Flota Auto</a>
+      <a class="active" href="tariffs.html">Tarife</a>
+      <a href="about.html">Despre Noi</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="phone">
+        <i class="fa fa-phone"></i>
+        <div>
+          <b>021 9477</b>
+          <small>Apel non-stop</small>
+        </div>
+      </div>
+
+      <button class="btn-taxi" onclick="window.location.href='contact.html'">
+        <i class="fa fa-taxi"></i> Comandă taxi
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- HERO STYLE UNIFORM -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-left">
+      <h1>Tarife <span>clare</span> și avantajoase</h1>
+      <p>Prețuri transparente pentru orice tip de cursă. Fără surprize.</p>
+    </div>
+
+    <div class="hero-right">
+      <img class="car" src="img/taxi.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- TARIFE TABLE MODERN CARD STYLE -->
+<section class="services">
+
+  <h2>Lista Tarifelor</h2>
+
+  <div class="services-cards">
+
+    <div class="card">
+      <img src="img/urban.webp">
+      <h5>Urban</h5>
+      <p><b>8 lei/km</b></p>
+    </div>
+
+    <div class="card">
+      <img src="img/interurban.jpg">
+      <h5>Interurban</h5>
+      <p><b>10 lei/km</b></p>
+    </div>
+
+    <div class="card">
+      <img src="img/aeroport.jpg">
+      <h5>Aeroport</h5>
+      <p><b>250 lei fix</b></p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CALCULATOR MODERN (CA HERO FORM) -->
+<section class="app">
+
+  <div class="container app-grid">
+
+    <div class="app-left">
+      <h2>Calculator tarif</h2>
+      <p>Introdu distanța și află prețul estimativ al cursei.</p>
+
+      <input type="number" id="distance" placeholder="Distanță (km)" style="width:100%;padding:12px;border-radius:8px;border:none;margin-bottom:10px;">
+
+      <button class="btn" onclick="calculateFare()">
+        Calculează
+      </button>
+
+      <h3 id="result" style="margin-top:15px;color:#ffc400;"></h3>
+    </div>
+
+    <div class="app-right">
+      <img src="img/tarif.png">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REDUCERI -->
+<section class="features">
+
+  <div class="features-grid">
+
+    <div class="feature">
+      <i class="fa fa-graduation-cap"></i>
+      <h5>Student</h5>
+      <p>10% reducere</p>
+    </div>
+
+    <div class="feature">
+      <i class="fa fa-building"></i>
+      <h5>Corporate</h5>
+      <p>Contracte firme</p>
+    </div>
+
+    <div class="feature">
+      <i class="fa fa-calendar"></i>
+      <h5>Abonament</h5>
+      <p>Reduceri lunare</p>
+    </div>
+
+    <div class="feature">
+      <i class="fa fa-clock"></i>
+      <h5>Non-stop</h5>
+      <p>24/7 disponibil</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="app">
+
+  <div class="container">
+
+    <h2 style="text-align:center;margin-bottom:30px;">Întrebări frecvente</h2>
+
+    <div class="hero-form" style="width:100%;max-width:700px;margin:auto;">
+
+      <p style="color: #ffffff;"><b style="color: #ffc400;">Există tarif de noapte?</b><br>Da, după ora 22:00.</p>
+      <hr style="border:1px solid #ffffff;">
+
+      <p style="color: #ffffff;"><b style="color: #ffc400;">Se percepe taxă de comandă?</b><br>Nu, comanda este gratuită.</p>
+      <hr style="border:1px solid #ffffff;">
+
+      <p style="color: #ffffff;"><b style="color: #ffc400;">Pot plăti cu cardul?</b><br>Da, toate mașinile acceptă card.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Speed Taxi © 2026 - Transport sigur 24/7
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+
+</body>
+</html>

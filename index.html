@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Taxi</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="container">
+
+        <div class="logo">
+            ⚡ SPEED <span>TAXI</span>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <nav class="menu" id="navMenu">
+            <a href="index.html">Acasă</a>
+            <a href="services.html">Servicii</a>
+            <a href="fleet.html">Flota Auto</a>
+            <a href="tariffs.html">Tarife</a>
+            <a href="about.html">Despre Noi</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-right">
+
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                <div>
+                    <b>021 9477</b>
+                    <small>Apel non-stop</small>
+                </div>
+            </div>
+
+            <button class="btn-taxi" onclick="window.location.href='contact.html'">
+                <i class="fa fa-taxi"></i> Comandă taxi
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- LEFT -->
+            <div class="hero-left">
+                <h1>Când ai drum,<br>noi suntem <span>mai rapizi!</span></h1>
+                <p>Speed Taxi este mereu aproape de tine.<br>Transport sigur, rapid și confortabil.</p>
+                <div class="hero-form">
+                    <h4>Comandă taxi rapid</h4>
+                    <input type="text" placeholder="Locație de plecare">
+                    <input type="text" placeholder="Destinație">
+                    <div class="form-row">
+                        <select>
+                            <option>Acum</option>
+                        </select>
+                        <button type="button" id="orderTaxiBtn">COMANDĂ ACUM</button>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="hero-right">
+                <img class="car" src="">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature"><i class="fa fa-clock"></i>
+                <h5>Rapiditate</h5>
+                <p>Ajungem la tine în cel mai scurt timp.</p>
+            </div>
+            <div class="feature"><i class="fa fa-shield"></i>
+                <h5>Siguranță</h5>
+                <p>Șoferi profesioniști și verificați.</p>
+            </div>
+            <div class="feature"><i class="fa fa-user"></i>
+                <h5>Confort</h5>
+                <p>Mașini curate, moderne și bine întreținute.</p>
+            </div>
+            <div class="feature"><i class="fa fa-credit-card"></i>
+                <h5>Plăți diverse</h5>
+                <p>Plătești cum vrei: card sau numerar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP -->
+    <section class="app">
+        <div class="container app-grid">
+            <div class="app-left">
+                <h2>Descarcă aplicația Speed Taxi</h2>
+                <p>Comandă mai ușor, urmărește mașina în timp real și plătește direct din aplicație.</p>
+                <div class="app-buttons">
+                    <button>Google Play</button>
+                    <button>App Store</button>
+                </div>
+                <ul>
+                    <li>Comandă rapidă</li>
+                    <li>Urmărire în timp real</li>
+                    <li>Factură electronică</li>
+                </ul>
+            </div>
+            <div class="app-right">
+                <img src="img/telefon2.png" alt="App">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="container">
+            <h2>Serviciile noastre</h2>
+            <div class="services-cards">
+                <div class="card"><img src="img/transfer-aeroport.webp" alt="">
+                    <h5>Transfer Aeroport</h5>
+                </div>
+                <div class="card"><img src="img/transport business.webp" alt="">
+                    <h5>Transport Business</h5>
+                </div>
+                <div class="card"><img src="img/curse in oras.jpg" alt="">
+                    <h5>Curse în Oraș</h5>
+                </div>
+                <div class="card"><img src="img/curse pe distante lungi.webp" alt="">
+                    <h5>Curse pe Distanțe Lungi</h5>
+                </div>
+            </div>
+        </div>
+        <section class="fleet">
+
+            <h2>Flota Noastră</h2>
+
+            <!-- filtre -->
+            <div class="fleet-filter">
+                <button class="active">Toate</button>
+                <button>Sedan</button>
+                <button>SUV</button>
+                <button>Minivan</button>
+                <button>Luxury</button>
+            </div>
+
+            <!-- grid -->
+            <div class="fleet-grid">
+
+                <div class="fleet-item">
+                    <img src="img/bmw.jpg" alt="">
+                    <div class="fleet-info">
+                        <h5>BMW Seria 5</h5>
+                        <p>Sedan • 4 locuri</p>
+                    </div>
+                </div>
+
+                <div class="fleet-item">
+                    <img src="img/vito.jpg" alt="">
+                    <div class="fleet-info">
+                        <h5>Mercedes Vito</h5>
+                        <p>Minivan • 7 locuri</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+                <h3>⚡ Speed Taxi</h3>
+                <p>Transport rapid, sigur și confortabil 24/7.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Linkuri rapide</h4>
+                <a href="index.html">Acasă</a>
+                <a href="services.html">Servicii</a>
+                <a href="fleet.html">Flota Auto</a>
+                <a href="tariffs.html">Tarife</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📞 021 9477</p>
+                <p>✉ office@speedtaxi.md</p>
+                <p>📍 Chișinău, Moldova</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Social</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Speed Taxi. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
