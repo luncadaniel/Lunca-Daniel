@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Taxi - Contact</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Fonts + Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER IDENTIC CA INDEX -->
+    <header class="header">
+        <div class="container">
+
+            <div class="logo">
+                ⚡ SPEED <span>TAXI</span>
+            </div>
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="menu" id="navMenu">
+                <a href="index.html">Acasă</a>
+                <a href="services.html">Servicii</a>
+                <a href="fleet.html">Flota Auto</a>
+                <a href="tariffs.html">Tarife</a>
+                <a href="about.html">Despre Noi</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-right">
+
+                <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <div>
+                        <b>021 9477</b>
+                        <small>Apel non-stop</small>
+                    </div>
+                </div>
+
+                <button class="btn-taxi" onclick="window.location.href='contact.html'">
+                    <i class="fa fa-taxi"></i> Comandă taxi
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <h1>Contact <span>rapid</span></h1>
+                <p>Comandă o cursă sau contactează-ne pentru suport.</p>
+            </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section">
+        <form id="bookingForm">
+
+            <input type="text" id="name" placeholder="Nume">
+            <input type="tel" id="phone" placeholder="Telefon">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="pickup" placeholder="Adresă preluare">
+            <input type="text" id="destination" placeholder="Destinație">
+            <input type="date" id="date">
+            <input type="time" id="time">
+
+            <select id="vehicle">
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Minivan</option>
+                <option>Luxury</option>
+            </select>
+
+            <button type="submit" class="btn">Trimite Comanda</button>
+
+        </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+        <h2>Date Contact</h2>
+        <p>Telefon: +373 60000000</p>
+        <p>Email: office@speedtaxi.md</p>
+        <p>Adresă: Chișinău, Moldova</p>
+    </section>
+
+    <!-- HARTĂ -->
+    <section class="section">
+        <h2>Hartă</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="400">
+        </iframe>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="section">
+        <h2>Social Media</h2>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Speed Taxi © 2026 - Transport sigur 24/7
+    </footer>
+
+    <button id="topBtn">↑</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>

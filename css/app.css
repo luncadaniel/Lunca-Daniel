@@ -1,0 +1,1020 @@
+/* ================================
+   RESET GLOBAL
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+/* Container general */
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* ================================
+   HEADER
+================================ */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b0f14;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.logo span {
+  color: #ffc400;
+}
+
+/* Meniu */
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffc400;
+}
+
+.menu a.active {
+  color: #ffc400;
+  border-bottom: 2px solid #ffc400;
+  padding-bottom: 5px;
+}
+
+/* Dreapta header */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.phone small {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.btn-taxi {
+  background: #ffc400;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-taxi:hover {
+  background: #e0a800;
+}
+
+/* ================================
+   HERO (GENERAL)
+================================ */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 120px 10% 80px;
+}
+
+/* HERO background template style */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* HERO TEXT */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-left h1 {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.hero-left h1 span {
+  color: #ffc400;
+}
+
+.hero-left p {
+  margin: 15px 0 25px;
+  color: #ffc400;
+}
+
+/* ================================
+   BUTTON GENERAL
+================================ */
+.btn {
+  display: inline-block;
+  background: #ffc400;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0a800;
+}
+
+/* ================================
+   HERO FORM
+================================ */
+.hero-form {
+  background: #111821;
+  padding: 20px;
+  border-radius: 12px;
+  width: 360px;
+}
+
+.hero-form h4 {
+  color: #ffc400;
+  margin-bottom: 10px;
+}
+
+.hero-form input,
+.hero-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row button {
+  background: #ffc400;
+  border: none;
+  flex: 1;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================================
+   FEATURES
+================================ */
+.features {
+  padding: 60px 10%;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.features-grid i {
+  font-size: 32px;
+  color: #ffc400;
+  margin-bottom: 10px;
+}
+
+/* ================================
+   APP SECTION
+================================ */
+.app {
+  background: #fff7e6;
+  padding: 60px 10%;
+}
+
+.app-grid {
+  justify-content: center;
+  text-align: center;
+}
+
+.app-left h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.app-left p {
+  margin-bottom: 15px;
+}
+
+.app-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.app-left ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.app-left ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.app-left ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffc400;
+}
+
+/* ================================
+   SERVICES PAGE (SERVICII)
+================================ */
+.services {
+  padding: 80px 10%;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.services-cards .card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: 0.3s;
+}
+
+.services-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.services-cards .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.services-cards .card h5 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ================================
+   ACCORDION STYLE
+================================ */
+.accordion-button {
+  background: #0b0f14;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #ffc400;
+  color: black;
+}
+
+/* ================================
+   COUNTER
+================================ */
+.counter {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffc400;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background: #0b0f14;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media(max-width:1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media(max-width:600px) {
+  .container {
+    width: 92%;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .features-grid,
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ================================
+   FLEET / FLOTA AUTO
+================================ */
+
+.fleet {
+  padding: 80px 10%;
+}
+
+.fleet h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* BUTOANE FILTRARE */
+.fleet-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.fleet-filter button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.fleet-filter button.active,
+.fleet-filter button:hover {
+  background: #ffc400;
+  color: #000;
+}
+
+/* GRID MAȘINI */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD MAȘINĂ */
+.fleet-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.fleet-item:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGINE */
+.fleet-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fleet-item img:hover {
+  filter: brightness(0.9);
+}
+
+/* INFO MAȘINĂ */
+.fleet-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.fleet-info h5 {
+  margin-bottom: 5px;
+}
+
+.fleet-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* LIGHTBOX (dacă îl faci JS) */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0b0f14 !important;
+}
+
+.navbar-brand span {
+  color: #ffc400;
+}
+
+/* HERO GENERAL */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1502877338535-766e1452684a") center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+/* CARDURI MODERNE */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICONURI */
+.service-icon {
+  font-size: 40px;
+  color: #ffc400;
+}
+
+
+/* ================================
+   FIX NAVBAR CONTACT / PAGINI SECUNDARE
+================================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #0b0f14;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffc400;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0b0f14;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* ================= FORM ================= */
+#bookingForm {
+  max-width: 650px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* INPUTS */
+#bookingForm input,
+#bookingForm select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* focus efect */
+#bookingForm input:focus,
+#bookingForm select:focus {
+  border-color: #ffc400;
+  box-shadow: 0 0 8px rgba(255, 196, 0, 0.3);
+}
+
+/* BUTTON */
+#bookingForm button {
+  width: 100%;
+  padding: 12px;
+  background: #ffc400;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#bookingForm button:hover {
+  background: #e6b400;
+  transform: translateY(-2px);
+}
+
+/* ================= CONTACT INFO ================= */
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* ================= MAP ================= */
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* ================= SOCIAL MEDIA ================= */
+.section a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 14px;
+  background: #0b0f14;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.section a:hover {
+  background: #ffc400;
+  color: black;
+}
+
+/* ================= BACK TO TOP ================= */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffc400;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+}
+ 
+
+/* =================================
+   RESPONSIVE COMPLET
+================================= */
+
+/* Laptopuri mici */
+@media (max-width: 1200px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .hero-left h1 {
+    font-size: 44px;
+  }
+
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablete */
+@media (max-width: 992px) {
+
+  .hero {
+    padding: 120px 5% 60px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 38px;
+  }
+
+  .app-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
+/* Telefon */
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 140px 20px 60px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .hero-form {
+    width: 100%;
+  }
+
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .app-buttons button {
+    width: 100%;
+  }
+
+  .fleet-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fleet-filter button {
+    width: 220px;
+  }
+}
+
+/* Telefoane foarte mici */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero-left h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .btn,
+  .btn-taxi {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-form {
+    padding: 15px;
+  }
+
+  .hero-form input,
+  .hero-form select {
+    font-size: 14px;
+  }
+
+  .services h2,
+  .fleet h2,
+  .app-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .counter {
+    font-size: 28px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+/* ===============================
+   CENTRARE GLOBALĂ ABOUT PAGE
+================================ */
+
+/* centrează tot textul din pagină */
+.hero-left,
+.features,
+.app,
+.services {
+  text-align: center;
+}
+
+/* centrează grid-urile */
+.hero-container,
+.app-grid,
+.features-grid,
+.services-cards {
+  justify-content: center;
+  align-items: center;
+}
+
+/* hero pe mijloc */
+.hero-container {
+  text-align: center;
+}
+
+/* APP SECTION centrat */
+.app-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* liste centrate */
+.app-left ul {
+  padding: 0;
+}
+
+.app-left ul li {
+  list-style: none;
+}
+
+/* imagini centrate */
+.hero-right img,
+.app-right img {
+  margin: auto;
+  display: block;
+}
+/* =========================
+   FOOTER SPEED TAXI
+========================= */
+.footer {
+    background: #0b0f14;
+    color: white;
+    margin-top: 60px;
+    padding: 50px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    color: #ffc400;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ffc400;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #222;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* =========================
+   MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #0b0f14;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 220px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
